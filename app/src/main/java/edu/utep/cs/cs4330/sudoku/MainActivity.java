@@ -189,13 +189,7 @@ public class MainActivity extends AppCompatActivity{
                 return false;
             }
         }
-        for (int i = 0; i < Math.sqrt(board.size); i++) {
-            for (int j = 0; j < Math.sqrt(board.size); j++) {
-                if (Board.battle_Board[x - (x % (int) Math.sqrt(board.size)) + i][y - (y % (int) Math.sqrt(board.size)) + j] == toInsert) {
-                    return false;
-                }
-            }
-        }
+        
         return true;
     }
     /**Switch case to handle when the user selects a 4x4 or a 9x9**/
